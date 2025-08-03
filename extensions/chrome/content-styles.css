@@ -1,0 +1,449 @@
+/**
+ * Univo Chrome Extension - Content Styles
+ * Styles for enhanced meeting platform integration
+ */
+
+/* Univo Enhancement Styles */
+.univo-enhanced {
+    border: 2px solid #667eea !important;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.univo-enhanced:hover {
+    box-shadow: 0 0 30px rgba(102, 126, 234, 0.5) !important;
+}
+
+/* AI Overlay Styles */
+.univo-ai-overlay {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 15px !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    z-index: 1000 !important;
+    backdrop-filter: blur(10px) !important;
+    animation: univo-fade-in 0.5s ease !important;
+}
+
+/* Quantum Security Indicator */
+.univo-quantum-indicator {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%) !important;
+    color: white !important;
+    padding: 6px 10px !important;
+    border-radius: 12px !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    z-index: 1000 !important;
+    animation: univo-quantum-pulse 2s infinite !important;
+}
+
+/* Neural Interface Pulse Effect */
+.univo-neural-pulse {
+    animation: univo-neural-pulse 2s infinite !important;
+}
+
+@keyframes univo-neural-pulse {
+    0% { 
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+        border-color: #667eea;
+    }
+    70% { 
+        box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+        border-color: #764ba2;
+    }
+    100% { 
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+        border-color: #667eea;
+    }
+}
+
+/* Quantum Pulse Animation */
+@keyframes univo-quantum-pulse {
+    0% { 
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% { 
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% { 
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Metaverse Portal */
+.univo-metaverse-portal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 200px !important;
+    height: 200px !important;
+    background: radial-gradient(circle, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    z-index: 10000 !important;
+    cursor: pointer !important;
+    animation: univo-portal-spin 10s linear infinite !important;
+    box-shadow: 0 0 50px rgba(102, 126, 234, 0.6) !important;
+}
+
+@keyframes univo-portal-spin {
+    from { 
+        transform: translate(-50%, -50%) rotate(0deg);
+        box-shadow: 0 0 50px rgba(102, 126, 234, 0.6);
+    }
+    to { 
+        transform: translate(-50%, -50%) rotate(360deg);
+        box-shadow: 0 0 50px rgba(118, 75, 162, 0.6);
+    }
+}
+
+/* Fade In Animation */
+@keyframes univo-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Univo Branding */
+#univo-branding {
+    position: fixed !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    z-index: 10000 !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    user-select: none !important;
+}
+
+#univo-branding:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* Enhancement Panel */
+#univo-panel {
+    position: fixed !important;
+    top: 50% !important;
+    right: 20px !important;
+    transform: translateY(-50%) !important;
+    z-index: 10000 !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    color: white !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    width: 280px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    animation: univo-slide-in 0.3s ease !important;
+}
+
+@keyframes univo-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+/* AI Assistant Panel */
+#univo-ai-assistant {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 10000 !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: white !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    width: 300px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    animation: univo-fade-in 0.5s ease !important;
+}
+
+/* Neural Interface Indicator */
+#univo-neural-interface {
+    position: fixed !important;
+    top: 20px !important;
+    left: 20px !important;
+    z-index: 10000 !important;
+    background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%) !important;
+    color: white !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 20px rgba(0,255,136,0.3) !important;
+    animation: univo-fade-in 0.5s ease !important;
+}
+
+/* Blockchain Identity Badge */
+#univo-blockchain-badge {
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10000 !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+    animation: univo-fade-in 0.5s ease !important;
+}
+
+/* Enhancement Control Panel */
+#univo-enhancements {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 10000 !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: white !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    min-width: 250px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    animation: univo-slide-up 0.3s ease !important;
+}
+
+@keyframes univo-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Translation Popup */
+#univo-translation-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10000 !important;
+    background: white !important;
+    color: black !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
+    max-width: 400px !important;
+    border: 2px solid #4CAF50 !important;
+    animation: univo-popup-in 0.3s ease !important;
+}
+
+@keyframes univo-popup-in {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Button Styles */
+.univo-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.univo-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+}
+
+.univo-button:active {
+    transform: translateY(0) !important;
+}
+
+/* Close Button */
+.univo-close-button {
+    position: absolute !important;
+    top: 5px !important;
+    right: 8px !important;
+    background: none !important;
+    border: none !important;
+    color: white !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.univo-close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Notification Styles */
+.univo-notification {
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10001 !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 25px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.univo-notification.success {
+    background: #4CAF50 !important;
+}
+
+.univo-notification.error {
+    background: #f44336 !important;
+}
+
+.univo-notification.info {
+    background: #2196F3 !important;
+}
+
+/* Loading Spinner */
+.univo-spinner {
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid rgba(255,255,255,0.3) !important;
+    border-top: 2px solid white !important;
+    border-radius: 50% !important;
+    animation: univo-spin 1s linear infinite !important;
+    margin: 0 auto 10px !important;
+}
+
+@keyframes univo-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #univo-panel,
+    #univo-ai-assistant,
+    #univo-enhancements {
+        width: 90% !important;
+        left: 5% !important;
+        right: auto !important;
+        transform: none !important;
+    }
+    
+    .univo-metaverse-portal {
+        width: 150px !important;
+        height: 150px !important;
+        font-size: 14px !important;
+    }
+    
+    #univo-translation-popup {
+        width: 90% !important;
+        max-width: none !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    #univo-translation-popup {
+        background: #2d2d2d !important;
+        color: white !important;
+        border-color: #4CAF50 !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .univo-enhanced {
+        border-width: 3px !important;
+    }
+    
+    .univo-ai-overlay,
+    .univo-quantum-indicator {
+        border: 1px solid white !important;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .univo-enhanced,
+    .univo-button,
+    .univo-notification,
+    #univo-branding {
+        transition: none !important;
+    }
+    
+    .univo-neural-pulse,
+    .univo-metaverse-portal,
+    .univo-spinner {
+        animation: none !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    #univo-branding,
+    #univo-panel,
+    #univo-ai-assistant,
+    #univo-neural-interface,
+    #univo-blockchain-badge,
+    #univo-enhancements,
+    #univo-translation-popup,
+    .univo-metaverse-portal,
+    .univo-notification {
+        display: none !important;
+    }
+}

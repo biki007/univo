@@ -1,0 +1,131 @@
+{
+  "manifest_version": 3,
+  "name": "Univo - Next-Generation Video Conferencing",
+  "version": "1.0.0",
+  "description": "Revolutionary video conferencing with AI, quantum security, blockchain identity, and metaverse features",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "webNavigation",
+    "tabs",
+    "scripting",
+    "desktopCapture",
+    "system.display",
+    "background",
+    "contextMenus",
+    "identity",
+    "webRequest",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://*.univo.app/*",
+    "https://*.zoom.us/*",
+    "https://*.teams.microsoft.com/*",
+    "https://*.meet.google.com/*",
+    "https://*.webex.com/*",
+    "https://*.gotomeeting.com/*",
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.univo.app/*",
+        "https://*.zoom.us/*",
+        "https://*.teams.microsoft.com/*",
+        "https://*.meet.google.com/*",
+        "https://*.webex.com/*",
+        "https://*.gotomeeting.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "css": [
+        "content-styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Univo Extension",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injected-script.js",
+        "ai-overlay.html",
+        "quantum-panel.html",
+        "blockchain-panel.html",
+        "neural-interface.html",
+        "metaverse-portal.html",
+        "assets/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://*.univo.app/*"
+    ]
+  },
+  "commands": {
+    "toggle-ai-assistant": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A"
+      },
+      "description": "Toggle AI Assistant"
+    },
+    "start-quantum-meeting": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q",
+        "mac": "Command+Shift+Q"
+      },
+      "description": "Start Quantum-Secured Meeting"
+    },
+    "enter-metaverse": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M",
+        "mac": "Command+Shift+M"
+      },
+      "description": "Enter Metaverse Mode"
+    },
+    "neural-interface-toggle": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+N",
+        "mac": "Command+Shift+N"
+      },
+      "description": "Toggle Neural Interface"
+    }
+  },
+  "options_page": "options.html",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "univo_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; connect-src https://*.univo.app wss://*.univo.app https://api.openai.com https://api.anthropic.com;"
+  }
+}

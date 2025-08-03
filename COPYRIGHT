@@ -1,0 +1,42 @@
+Copyright Notice
+================
+
+Copyright (c) 2025 Univio Team
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+All rights reserved. This software and associated documentation files (the "Software") 
+are protected by copyright law and international treaties.
+
+Third-Party Licenses
+===================
+
+This project uses various open-source libraries and frameworks. Each dependency 
+retains its original license and copyright. See package.json for a complete list 
+of dependencies.
+
+Key Dependencies:
+- Next.js: MIT License
+- React: MIT License  
+- TypeScript: Apache License 2.0
+- Tailwind CSS: MIT License
+- Supabase: Apache License 2.0
+- And many others listed in package.json
+
+Attribution
+===========
+
+When using this software, please include the following attribution:
+
+"Powered by Univio Platform - Next-generation video conferencing technology"
+
+Contact
+=======
+
+For licensing inquiries or copyright questions:
+Email: legal@univio.com
+Website: https://univio.com
+
+---
+
+Last Updated: January 2025

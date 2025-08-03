@@ -1,0 +1,98 @@
+# FastAPI and web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+
+# Database and caching
+sqlalchemy==2.0.23
+alembic==1.12.1
+asyncpg==0.29.0
+redis==5.0.1
+motor==3.3.2
+
+# AI/ML frameworks
+torch==2.1.1
+torchvision==0.16.1
+torchaudio==0.16.1
+tensorflow==2.15.0
+transformers==4.36.0
+sentence-transformers==2.2.2
+openai-whisper==20231117
+opencv-python==4.8.1.78
+mediapipe==0.10.8
+face-recognition==1.3.0
+speechrecognition==3.10.0
+pydub==0.25.1
+
+# Computer Vision and Image Processing
+pillow==10.1.0
+scikit-image==0.22.0
+albumentations==1.3.1
+ultralytics==8.0.206
+
+# Natural Language Processing
+spacy==3.7.2
+nltk==3.8.1
+textblob==0.17.1
+langdetect==1.0.9
+
+# Data Science and Analytics
+numpy==1.24.4
+pandas==2.1.4
+scikit-learn==1.3.2
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+
+# Quantum Computing
+qiskit==0.45.1
+qiskit-aer==0.13.1
+cirq==1.2.0
+
+# Blockchain and Cryptography
+web3==6.12.0
+cryptography==41.0.7
+pycryptodome==3.19.0
+hashlib-compat==1.0.1
+
+# Audio Processing
+librosa==0.10.1
+soundfile==0.12.1
+pyaudio==0.2.11
+webrtcvad==2.0.10
+
+# Video Processing
+ffmpeg-python==0.2.0
+moviepy==1.0.3
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+authlib==1.2.1
+
+# HTTP and API clients
+httpx==0.25.2
+aiohttp==3.9.1
+requests==2.31.0
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+celery==5.3.4
+flower==2.0.1
+prometheus-client==0.19.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Deployment
+gunicorn==21.2.0
+docker==6.1.3
+kubernetes==28.1.0

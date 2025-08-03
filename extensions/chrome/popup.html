@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univo Extension</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 350px;
+            min-height: 400px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .status {
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.1);
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .status-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #4CAF50;
+        }
+
+        .status-indicator.inactive {
+            background: #666;
+        }
+
+        .actions {
+            padding: 0 20px 20px;
+        }
+
+        .action-button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+
+        .action-button:active {
+            transform: translateY(0);
+        }
+
+        .action-button.primary {
+            background: #4CAF50;
+        }
+
+        .action-button.primary:hover {
+            background: #45a049;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-action {
+            padding: 8px;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-action:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .footer {
+            padding: 15px 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🚀 Univo</div>
+        <div class="tagline">Next-Generation Video Conferencing</div>
+    </div>
+
+    <div class="status">
+        <div class="status-item">
+            <span>AI Assistant</span>
+            <div class="status-indicator" id="ai-status"></div>
+        </div>
+        <div class="status-item">
+            <span>Quantum Security</span>
+            <div class="status-indicator" id="quantum-status"></div>
+        </div>
+        <div class="status-item">
+            <span>Neural Interface</span>
+            <div class="status-indicator" id="neural-status"></div>
+        </div>
+        <div class="status-item">
+            <span>Metaverse Mode</span>
+            <div class="status-indicator" id="metaverse-status"></div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="action-button primary" id="start-meeting">
+            🎥 Start Quantum Meeting
+        </button>
+        
+        <button class="action-button" id="join-meeting">
+            🔗 Join Meeting
+        </button>
+        
+        <button class="action-button" id="enhance-current">
+            ✨ Enhance Current Meeting
+        </button>
+
+        <div class="quick-actions">
+            <button class="quick-action" id="toggle-ai">
+                🤖 AI Assistant
+            </button>
+            <button class="quick-action" id="enter-metaverse">
+                🌐 Metaverse
+            </button>
+            <button class="quick-action" id="neural-connect">
+                🧠 Neural
+            </button>
+            <button class="quick-action" id="blockchain-verify">
+                ⛓️ Verify ID
+            </button>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Processing...</div>
+    </div>
+
+    <div class="footer">
+        <div>Univo Extension v1.0.0</div>
+        <div>Powered by Advanced AI & Quantum Security</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
